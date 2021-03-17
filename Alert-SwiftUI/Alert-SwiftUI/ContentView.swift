@@ -16,6 +16,17 @@ struct ContentView: View {
         }) {
             Text("Alertを表示する")
         }
+        .alert(isPresented: $isAlertActive, content: {
+            Alert(title: Text("エラータイトル"),
+                  message: Text("エラーメッセージ"),
+                  primaryButton: .default(Text("OK"), action: {
+                    print("OKを選択した時の処理をここに実装する")
+                  }),
+                  secondaryButton: .cancel(Text("キャンセル"), action: {
+                    print("キャンセルを選択した時の処理をここに実装する")
+                  })
+            )
+        })
     }
 }
 
