@@ -12,6 +12,7 @@ struct ContentView: View {
         
         Button(action: {
         }) {
+            Text("Alertを表示する")
         }
     }
 }
