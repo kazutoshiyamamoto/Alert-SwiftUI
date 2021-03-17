@@ -11,8 +11,8 @@ struct ContentView: View {
     @State var isAlertActive = false
     
     var body: some View {
-        
         Button(action: {
+            self.isAlertActive = true
         }) {
             Text("Alertを表示する")
         }
