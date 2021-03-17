@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isAlertActive = false
+    
     var body: some View {
         
         Button(action: {
